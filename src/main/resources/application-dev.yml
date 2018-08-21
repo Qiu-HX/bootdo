@@ -10,7 +10,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/bootdo?useUnicode=true&characterEncoding=utf8
     username: root
-    password: root
+    password: 123456
     initialSize: 1
     minIdle: 3
     maxActive: 20
@@ -34,9 +34,10 @@ spring:
     # 合并多个DruidDataSource的监控数据
     #useGlobalDataSourceStat: true
   redis:
-    host: localhost
+    database: 0
+    host: 192.168.177.1
     port: 6379
-    password:
+    password: 123456
     # 连接超时时间（毫秒）
     timeout: 10000
     jedis:
